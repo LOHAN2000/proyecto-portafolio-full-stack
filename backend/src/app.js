@@ -1,4 +1,3 @@
-// app.js (sin configurar dotenv aquí)
 import express from 'express';
 import authRoutes from './routes/auth.routes.js';
 

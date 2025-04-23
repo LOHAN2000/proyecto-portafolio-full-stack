@@ -1,5 +1,4 @@
-// server.js (código corregido)
-import 'dotenv/config'; // ✅ Importación directa del config
+import 'dotenv/config'; 
 import app from './app.js';
 import { sequelize } from './config/db.js';
 

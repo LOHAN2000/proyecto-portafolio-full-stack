@@ -1,14 +1,13 @@
-import 'dotenv/config'; 
+// server.js (código corregido)
+import 'dotenv/config'; // ✅ Importación directa del config
 import app from './app.js';
 import { sequelize } from './config/db.js';
-
-dotenv.config();
 
 (async () => {
   try {
     await sequelize.authenticate();
     console.log('✅ Conexión a la base de datos establecida con éxito.');
-    await sequelize.sync(); // Sincroniza tablas
+    await sequelize.sync(); 
     console.log('✅ Tablas sincronizadas correctamente');
   } catch (error) {
     console.error('❌ Error al conectar o sincronizar:', error);

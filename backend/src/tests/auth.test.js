@@ -20,9 +20,9 @@ describe("Auth Controller Tests", () => {
     await sequelize.close();
   });
 
-  // --------------------------------------------
+  // ---------------------------------------------
   // TESTS PARA SIGNUP
-  // --------------------------------------------
+  // ---------------------------------------------
   describe("POST /api/auth/signup", () => {
     const validUser = {
       fullname: "John Doe",

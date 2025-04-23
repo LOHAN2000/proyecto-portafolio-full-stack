@@ -4,18 +4,13 @@ on:
   push:
     branches: [main]
     paths:
-      - 'backend/**' # Solo se activa con cambios en la carpeta backend
-  pull_request:
-    branches: [main]
-    paths:
       - 'backend/**'
 
 jobs:
-  test-and-deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -25,17 +20,20 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'backend/package-lock.json'
 
-      - name: Install Backend Dependencies
+      - name: Install dependencies
         working-directory: ./backend
         run: npm install
 
-      - name: Run Tests
+      - name: Run tests
         working-directory: ./backend
         run: npm test
 
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to Render
-        uses: render-actions/deploy@v1
-        if: github.ref == 'refs/heads/main' # Solo despliega desde main
+        uses: render-actions/render-deploy@v1.0.0 # ✅ Acción oficial de Render
         with:
           service-id: ${{ secrets.RENDER_BACKEND_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}

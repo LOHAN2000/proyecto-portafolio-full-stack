@@ -14,12 +14,3 @@ export const sequelize = new Sequelize(process.env.DATABASE_URL, {
   logging: false
 });
 
-(async () => {
-  try {
-    await sequelize.authenticate();
-    await sequelize.sync(); // Crea tablas si no existen (sin borrar datos)
-    console.log('✅ Tablas sincronizadas');
-  } catch (error) {
-    console.error('❌ Error al sincronizar:', error);
-  }
-})();

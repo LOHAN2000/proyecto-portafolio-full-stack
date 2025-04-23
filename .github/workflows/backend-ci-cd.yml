@@ -33,7 +33,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Render
-        uses: render-actions/render-deploy@v1.0.0 # ✅ Acción oficial de Render
+        uses: render-actions/deploy@v1.0.0 # ✅ Nombre correcto
         with:
           service-id: ${{ secrets.RENDER_BACKEND_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
+          branch: main

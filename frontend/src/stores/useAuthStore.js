@@ -45,6 +45,17 @@ const useAuthStore = create((set) => ({
   },
 
   // Verificar 
+  checkAuth: async () => {
+    set({ loading: true, error: null });
+    try {
+      const { data } = await apiClient.get('/api/auth/me');
+      set({ user: data });
+    } catch {
+      set({ user: null });
+    } finally {
+      set({ loading: false });
+    }
+  },
 }));
 
 export default useAuthStore;

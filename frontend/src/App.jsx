@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import { Home } from '../pages/home/Home'
@@ -9,7 +9,11 @@ import useAuthStore from './stores/useAuthStore.js'
 
 function App() {
 
-  const { user } = useAuthStore();
+  const { user, checkAuth } = useAuthStore();
+
+  useEffect(() => {
+    checkAuth();
+  }, [])
 
   console.log(user)
 

@@ -5,15 +5,15 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write     # permitir push a gh-pages
-  pages: write        # (requerido para peaceiris/actions-gh-pages@v3)
+  contents: write   # permite push a gh-pages
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

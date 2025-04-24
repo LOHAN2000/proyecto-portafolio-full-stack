@@ -8,12 +8,10 @@ export const generateTokenAndSetCookie = (userId, res) => {
     expiresIn: '15d'
   });
 
-  res.cookie('jwt', token, {
-    httpOnly: true,          // no accesible desde JavaScript frontend
-    secure: false,           // 🚫 permite HTTP sin HTTPS :contentReference[oaicite:0]{index=0}
-    sameSite: 'lax',         // envío en navegación de primer partido, o:
-    // sameSite: 'none',     // si necesitas cross-site sin restricciones :contentReference[oaicite:1]{index=1}
+  res.cookie("jwt", token, {
     maxAge: 15 * 24 * 60 * 60 * 1000,
-    path: '/'
+    httpOnly: true,
+    secure: true, // necesario para HTTPS (GitHub Pages lo requiere)
+    sameSite: "None", // porque frontend y backend están en distintos dominios
   });
 };

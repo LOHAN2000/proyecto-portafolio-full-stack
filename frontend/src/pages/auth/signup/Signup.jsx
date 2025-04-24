@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import useAuthStore from '../../../src/stores/useAuthStore';
+import useAuthStore from '../../../stores/useAuthStore.js';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import logo from '../../../src/assets/logo-continental-negro-1.png'
+import logo from '../../../assets/logo-continental-negro-1.png'
 
 export const Signup = () => {
 

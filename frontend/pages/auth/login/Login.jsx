@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import useAuthStore from '../../../src/stores/useAuthStore';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../../../src/assets/logo-continental-negro-1.png'
 
 export const Login = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ export const Login = () => {
       <div className='flex h-full justify-center items-center'>
         <div className='grid grid-cols-1 sm:grid-cols-[auto_2fr] w-4/5 sm:min-w-1/2 max-w-[1200px] justify-center items-center p-4 gap-x-30'>
           <div className='size-40 sm:size-80 items-center justify-center'>
-            <img src='/logo-continental-negro-1.png' className='w-full h-full object-cover aspect-square object-center'/>
+            <img src={logo} alt='logo' className='w-full h-full object-cover aspect-square object-center'/>
           </div>
           <form onSubmit={handleSubmit} className="">
               <div className="grid gap-2">

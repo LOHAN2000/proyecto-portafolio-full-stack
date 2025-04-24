@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import useAuthStore from '../../../src/stores/useAuthStore';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
+import logo from '../../../src/assets/logo-continental-negro-1.png'
 
 export const Signup = () => {
 
@@ -25,7 +26,7 @@ export const Signup = () => {
       <div className='flex h-full justify-center items-center'>
         <div className='flex flex-col  w-4/6 sm:min-w-2/3 max-w-[1200px] justify-center items-center p-4 gap-y-3 sm:gap-y-1'>
           <div className='size-40 sm:size-60 items-center justify-center'>
-            <img src='/logo-continental-negro-1.png' className='w-full h-full object-cover aspect-square object-center'/>
+            <img src={logo} alt='logo' className='w-full h-full object-cover aspect-square object-center'/>
           </div>
           <form onSubmit={handleSubmit} className="flex flex-col w-full sm:w-2/4">
               <div className="grid gap-2">

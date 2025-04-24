@@ -3,6 +3,13 @@ import dotenv from 'dotenv'
 
 dotenv.config();
 
+export const cookieOptions = {
+  httpOnly: true,
+  secure: true,       // igual que al crearla
+  sameSite: 'None',   // igual que al crearla
+  path: '/'           // 👉 clave: debe coincidir con la cookie original
+};
+
 export const generateTokenAndSetCookie = (userId, res) => {
   const token = jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: '15d'

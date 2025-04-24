@@ -2,7 +2,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import User from '../models/User.js'
-import { generateTokenAndSetCookie } from '../lib/utils/generateToken.js'
+import { cookieOptions, generateTokenAndSetCookie } from '../lib/utils/generateToken.js'
 
 export class AuthController {
   static async signup (req, res) {
@@ -98,7 +98,7 @@ export class AuthController {
 
   static async logout(req, res) {
     try {
-      res.cookie('jwt', '', { maxAge: 0});
+      res.clearCookie('jwt', '', cookieOptions);
       return res.json({ message: 'Logged out successfully' });
     } catch (error) {
       console.error('Error in logout:', error);

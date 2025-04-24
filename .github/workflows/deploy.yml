@@ -4,33 +4,32 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write     # permitir push a gh-pages
+  pages: write        # (requerido para peaceiris/actions-gh-pages@v3)
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      # 3. Install & Build (apunta al subdirectorio "frontend")
       - name: Install dependencies
-        working-directory: ./frontend      # ← aquí
+        working-directory: ./frontend
         run: npm install
 
       - name: Build project
-        working-directory: ./frontend      # ← y también aquí
+        working-directory: ./frontend
         run: npm run build
 
-      # 4. Deploy to GH Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/dist     # ← la carpeta resultante de la build
+          publish_dir: ./frontend/dist

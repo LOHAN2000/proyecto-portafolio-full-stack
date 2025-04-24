@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../../assets/logo-continental-negro-1.png'
-import useAuthStore from '../../stores/useAuthStore'
+import useAuthStore from '../../stores/useAuthStore';
 
 export const Navbar = () => {
 
-  const [isSelected, setIsSelected] = useState('')
-  const { user } = useAuthStore();
-  console.log(user)
+  const [isSelected, setIsSelected] = useState('');
+  const { logout } = useAuthStore();
+
 
   return (
     <nav className='block w-full max-w-screen mx-auto shadow z-[9999]'>
@@ -18,7 +18,6 @@ export const Navbar = () => {
             <img src={logo} alt='logo' className='w-full h-full object-cover object-center aspect-square'/>
           </div>
           <h1 className='font-semibold'>Proyecto Portafolio - Grupo G</h1>
-          <h1 className='font-semibold'>{user?.username}</h1>
         </Link>
         <div className='flex'>
           <ul className='flex gap-x-5 '>
@@ -41,6 +40,9 @@ export const Navbar = () => {
               <Link onClick={() => setIsSelected('mirella-gavino')} to={'/mirella-gavino'}>
                 <p className={`hover:text-slate-500 ${isSelected === 'mirella-gavino' ? 'text-white' : 'text-slate-600'}`}>Mirella Gavino</p>
               </Link>
+            </li>
+            <li onClick={logout} className='flex items-center justify-center my-auto'>
+              <p className='text-red-500/80 text-center hover:text-red-500 cursor-pointer'>{'Salir >'}</p>
             </li>
           </ul>
         </div>

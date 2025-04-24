@@ -98,7 +98,7 @@ export class AuthController {
 
   static async logout(req, res) {
     try {
-      res.clearCookie('jwt', '', cookieOptions);
+      res.clearCookie('jwt', cookieOptions);
       return res.json({ message: 'Logged out successfully' });
     } catch (error) {
       console.error('Error in logout:', error);

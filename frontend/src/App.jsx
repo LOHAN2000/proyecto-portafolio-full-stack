@@ -10,7 +10,7 @@ import useAuthStore from './stores/useAuthStore.js'
 function App() {
 
   const { user, checkAuth, loading } = useAuthStore();
-// --
+// ----
   useEffect(() => {
     checkAuth();
   }, [checkAuth])

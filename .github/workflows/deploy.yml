@@ -19,16 +19,18 @@ jobs:
         with:
           node-version: '18'
 
-      # 3. Install & Build
+      # 3. Install & Build (apunta al subdirectorio "frontend")
       - name: Install dependencies
-        run:  npm install
+        working-directory: ./frontend      # ← aquí
+        run: npm install
+
       - name: Build project
+        working-directory: ./frontend      # ← y también aquí
         run: npm run build
-        # Por defecto generará ./dist :contentReference[oaicite:2]{index=2}
 
       # 4. Deploy to GH Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./frontend/dist     # ← la carpeta resultante de la build

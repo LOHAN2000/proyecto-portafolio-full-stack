@@ -11,7 +11,7 @@ export const generateTokenAndSetCookie = (userId, res) => {
   res.cookie("jwt", token, {
     maxAge: 15 * 24 * 60 * 60 * 1000,
     httpOnly: true,
-    secure: true, // necesario para HTTPS (GitHub Pages lo requiere)
-    sameSite: "None", // porque frontend y backend están en distintos dominios
+    secure: true, 
+    sameSite: "None", 
   });
 };

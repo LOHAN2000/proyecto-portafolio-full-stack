@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configuración global de Axios
 const apiClient = axios.create({
-  baseURL: 'https://proyecto-portafolio-full-stack.onrender.com',
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true, // Para enviar cookies (JWT)
 });
 

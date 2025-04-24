@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
-const base = import.meta.env.MODE === 'production' ? '/proyecto-portafolio-full-stack' : '/';
+const base = import.meta.env.MODE === 'production' ? '/proyecto-portafolio-full-stack/' : '/';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

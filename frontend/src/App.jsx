@@ -9,13 +9,19 @@ import useAuthStore from './stores/useAuthStore.js'
 
 function App() {
 
-  const { user, checkAuth } = useAuthStore();
+  const { user, checkAuth, loading } = useAuthStore();
 
   useEffect(() => {
     checkAuth();
-  }, [])
+  }, [checkAuth])
 
-  console.log(user)
+  if (loading) {
+    return (
+      <div className="h-screen flex justify-center items-center">
+        <h1 className='text-white'>Cargando...</h1>
+      </div>
+    )
+  }
 
   return (
     <>

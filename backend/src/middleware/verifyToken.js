@@ -6,7 +6,7 @@ export const verifyToken = (req, res, next) => {
   if (!token) return res.status(401).json({ message: 'No token found' });
   try {
     const { userId } = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = { id: userId /* y demás campos si los cargas */ };
+    req.user = { id: userId  };
     next();
   } catch {
     return res.status(401).json({ message: 'Invalid token' });

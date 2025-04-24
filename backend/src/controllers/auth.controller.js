@@ -105,4 +105,9 @@ export class AuthController {
       return res.status(500).json({ message: 'Internal server error' });
     }
   }
+
+  static async me(req, res) {
+    // Aquí, verifyToken ya puso `req.user`
+    return res.json(req.user);
+  }
 }

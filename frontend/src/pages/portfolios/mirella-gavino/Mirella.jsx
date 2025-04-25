@@ -20,7 +20,6 @@ import React from 'react';
 //    Ejemplo: <img src={mirella} alt="Descripción de la imagen" />
 // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 import mirella from './img/mirella-perfil.png'
-
 export const Mirella = () => {
   return (
     <div className="min-h-screen flex flex-col bg-black font-poppins">
@@ -29,10 +28,10 @@ export const Mirella = () => {
         <section id="home" className="flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
-              Hey there, I'm Anurag!
+              Hey Hola, Yo soy Mirella!
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              A Full Stack Developer and Designer based in India, passionate about turning code into seamless user experiences.
+               Me apasiona la tecnología y la innovación, y estoy en constante aprendizaje para combinar mis conocimientos técnicos con una orientación al usuario
             </p>
             <a
               href="/cv.pdf"
@@ -56,10 +55,14 @@ export const Mirella = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <p className="text-gray-600 dark:text-gray-300">
-                I'm a passionate full-stack developer with a background in computer science and extensive experience in crafting digital solutions that empower and inspire.
+                Soy estudiante de Ingeniería de Sistemas con una sólida trayectoria laboral desde los 17 años en diversos sectores.
+                 He trabajado como profesora de matemáticas, en atención al cliente, como cajera y actualmente en el área de desarrollo de clientes.
+                 A lo largo de mi experiencia, he desarrollado habilidades en resolución de problemas, comunicación efectiva y gestión de clientes,
+                 combinando mi formación en tecnología con un enfoque centrado en el usuario. Estoy en constante aprendizaje y busco aplicar mis conocimientos 
+                 en entornos dinámicos donde pueda aportar soluciones innovadoras.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                My journey blends strong theoretical foundations with real-world practice—coding in Python, JavaScript, and mastery of databases to deliver robust applications.
+                Trabajo en servicios de docencia en matemáticas, Elo Boosting en videojuegos competitivos y atención al cliente, garantizando calidad, eficiencia y un enfoque personalizado.
               </p>
             </div>
             <ul className="flex flex-wrap gap-3">
@@ -97,13 +100,13 @@ export const Mirella = () => {
                 Express
               </li>
               <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-purple-600 hover:text-white transition-all">
-                MongoDB
+                Eloboosting
               </li>
               <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-purple-600 hover:text-white transition-all">
                 MySQL
               </li>
               <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-purple-600 hover:text-white transition-all">
-                Docker
+                SBS
               </li>
               <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-purple-600 hover:text-white transition-all">
                 AWS
@@ -119,27 +122,27 @@ export const Mirella = () => {
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
               <div className="flex justify-between items-center mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">LTI-Mindtree</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Software Engineer</p>
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Atencion al cliente</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Desarrollo de Clientes</p>
                 </div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Jul 2021 - Present</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Febrero 2025 - Present</span>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                <li>Back-end engineer in Banking & Finance</li>
-                <li>Maintained portal features (Java, Spring, MySQL)</li>
+                <li>Identificación de oportunidades</li>
+                <li>Aumentar la satisfacción y retención de clientes</li>
               </ul>
             </div>
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
               <div className="flex justify-between items-center mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Edunomics</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Web Developer Intern</p>
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Docente</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Clases Particulares</p>
                 </div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">May 2020 - Jul 2020</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">May 2017 - Jul 2019</span>
               </div>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                <li>Built & deployed Edunomics.in</li>
-                <li>Stack: React, Bootstrap, Node, Express, MongoDB</li>
+                <li>Adaptación del contenido y metodología según el nivel</li>
+                <li>Cursos: Algebra, Trigonometria, Fisica, Geometria, Quimica</li>
               </ul>
             </div>
           </div>
@@ -196,39 +199,64 @@ export const Mirella = () => {
 
         {/* Projects Section */}
         <section id="projects">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Proyectos</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Mi Blog</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <a
-              href="https://amazon-clone.example.com"
+              href="https://www.canva.com/design/DAF-lGSm1xY/qWtsd3dx-7ON_QmRdti5Fw/edit?utm_content=DAF-lGSm1xY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img src="/images/amazon.jpg" alt="Amazon Clone" className="w-full h-40 object-cover" />
+              <img src="/images/clases particulares.jgp" alt="Enero 18, 2015" className="w-full h-40 object-cover" />
               <div className="p-4">
-                <h3 className="text-lg font-medium text-gray-800 dark:text-white">Amazon Clone</h3>
+                <h3 className="text-lg font-medium text-gray-800 dark:text-white">La pasión por enseñar</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Uno de mis primeros pasos en el mundo laboral fue la docencia particular en matemáticas.
+                  Brindar apoyo a estudiantes me permitió desarrollar habilidades pedagógicas, 
+                  paciencia y la capacidad de adaptar mis métodos de enseñanza a diferentes estilos 
+                  de aprendizaje. Aprendí a comunicar ideas complejas de manera clara y efectiva, 
+                  lo que me ha resultado útil en todas las áreas en las que he trabajado.
+                    </p>
               </div>
             </a>
             <a
-              href="https://facebook-clone.example.com"
+              href="https://www.makro.pe/"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img src="/images/facebook.jpg" alt="Facebook Clone" className="w-full h-40 object-cover" />
+              <img src="/images/facebook.jpg" alt="Agosto 18, 2016" className="w-full h-40 object-cover" />
               <div className="p-4">
-                <h3 className="text-lg font-medium text-gray-800 dark:text-white">Facebook Clone</h3>
+                <h3 className="text-lg font-medium text-gray-800 dark:text-white">La clave de la comunicación y organizacion</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Trabajar en atención al cliente y como cajera me dio una perspectiva
+                  única sobre la importancia del servicio y la eficiencia operativa.
+                    Desarrollé habilidades en resolución de problemas, gestión de tiempo y 
+                    comunicación efectiva. Aprendí a manejar situaciones bajo presión, 
+                    a brindar un trato amable y a garantizar una experiencia satisfactoria 
+                    para cada cliente. Esta experiencia me enseñó la importancia de la empatía
+                    y la capacidad de respuesta rápida.
+                    </p>
               </div>
             </a>
             <a
-              href="https://spotify-clone.example.com"
+              href="https://www.makro.pe/"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img src="/images/spotify.jpg" alt="Spotify Clone" className="w-full h-40 object-cover" />
+              <img src="/images/spotify.jpg" alt="Febrero 03, 2025" className="w-full h-40 object-cover" />
               <div className="p-4">
-                <h3 className="text-lg font-medium text-gray-800 dark:text-white">Spotify Clone</h3>
+                <h3 className="text-lg font-medium text-gray-800 dark:text-white">Conectando necesidades con soluciones</h3>
+                <p className="text-gray-400 leading-relaxed">
+                    Actualmente, mi enfoque está en el desarrollo de clientes, 
+                    donde combino mis habilidades en comunicación y resolución de problemas 
+                    para crear relaciones sólidas con los clientes. Mi capacidad de análisis y 
+                    comprensión de las necesidades del usuario me permite identificar oportunidades
+                    de mejora y crecimiento. En este rol, aplico tanto mis conocimientos técnicos 
+                    como mi experiencia en atención al cliente para ofrecer soluciones efectivas y
+                      generar valor para cada cliente con el que trabajo.
+                    </p>
               </div>
             </a>
           </div>
@@ -253,14 +281,14 @@ export const Mirella = () => {
                         <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                         </svg>
-                        <span>anurag@example.com</span>
+                        <span>mgavino614@gmail.com</span>
                     </div>
                     
                     <div className="flex items-center space-x-3 hover:text-white transition-colors">
                         <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
-                        <span>+91-1010101010</span>
+                        <span>+51 900661827</span>
                     </div>
                     </div>
                 </div>

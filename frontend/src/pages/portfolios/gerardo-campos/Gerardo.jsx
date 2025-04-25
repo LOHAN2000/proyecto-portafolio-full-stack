@@ -85,65 +85,27 @@ export const Gerardo = () => {
               </div>
             </section>
     
-            {/* About Section */}
-            <section id="about">
-              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Sobre mi</h2>
+            {/* Sección Sobre Mí */}
+            <section id="about" className="py-16 border-t border-gray-800">
+              <h2 className="text-4xl font-bold text-white mb-8">Sobre mí</h2>
               <div className="grid md:grid-cols-2 gap-12">
-                <div className="space-y-6">
-                  <p className="text-gray-600 dark:text-gray-300">
-                    I'm a passionate full-stack developer with a background in computer science and extensive experience in crafting digital solutions that empower and inspire.
+                <div className="space-y-6 text-gray-300">
+                  <p className="leading-relaxed">
+                    Profesional con más de 10 años de experiencia en empresas líderes del sector Retail, desempeñando roles clave en el área de TI. Especializado en la Gestión de Servicios e Infraestructura Tecnológica, con enfoque en la implementación de soluciones alineadas a los objetivos de negocio.
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    My journey blends strong theoretical foundations with real-world practice—coding in Python, JavaScript, and mastery of databases to deliver robust applications.
+                  <p className="leading-relaxed">
+                    Mi experiencia abarca desde la dirección técnica de proyectos multinacionales hasta la optimización de operaciones IT, siempre bajo los estándares internacionales como ITIL, COBIT y normas ISO.
                   </p>
                 </div>
-                <ul className="flex flex-wrap gap-3">
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    HTML
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    CSS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    SASS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Bootstrap
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Tailwind
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    JS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    TS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    React
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Next.js
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Node
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Express
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    MongoDB
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    MySQL
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    Docker
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-emerald-600 hover:text-white transition-all">
-                    AWS
-                  </li>
-                </ul>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  {['ITIL Certification', 'Azure Architect', 'CISSP', 'PMI Methodology', 'DevOps Practices', 'Agile Leadership'].map((cert) => (
+                    <div key={cert} className="flex items-center gap-2 p-4 bg-gray-800 rounded-lg">
+                      <i className="ri-medal-line text-emerald-600"></i>
+                      <span className="text-sm">{cert}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
     

@@ -36,7 +36,7 @@ export const Home = () => {
                 <h2 className="mt-1 mb-4 text-gray-500 dark:text-gray-400 font-thin text-xl">@Gerardo-Campos</h2>
                 
             </div>
-            <div className="w-full mt-8 md:!mt-0 md:w-1/4 border-b-1 border-gray-100 text-gray-500  dark:border-gray-700 md:border-b-0 md:border-r md:border-gray-200 items-center text-center px-8 py-5 flex flex-col">
+            <div className="w-full mt-8 md:!mt-0 md:w-1/4 border-b-1 border-gray-100 text-gray-500  dark:border-gray-700 md:border-b-0  md:border-gray-200 items-center text-center px-8 py-5 flex flex-col">
                 <img src={mirella} className="rounded-full h-24 w-24 object-cover" alt="" title="" />
                 <h1 className="mt-4 font-semibold text-gray-500 dark:text-white text-2xl">Kelly Mirella Gavino Solis</h1>
                 <h2 className="mt-1 mb-4 text-gray-500 dark:text-gray-400 font-thin text-xl">@NilsKuesel0</h2>

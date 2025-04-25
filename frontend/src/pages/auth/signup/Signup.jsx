@@ -46,6 +46,9 @@ export const Signup = () => {
                 <button className="whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-zinc-950 hover:bg-white/90 active:bg-white/80 flex w-full max-w-full mt-6 items-center justify-center rounded-lg px-4 py-4 text-base font-medium cursor-pointer" type="submit">
                   {loading ? <h1 className='animate-spin'>✖</h1> : 'Registrarse'}
                 </button>
+                <Link to={'/login'}>
+                  <h1 className='text-white font-semibold'>{'<- Ingresar'}</h1>
+                </Link>
               </div>
             </form>
         </div>

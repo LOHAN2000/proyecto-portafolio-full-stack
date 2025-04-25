@@ -29,6 +29,9 @@ function App() {
     )
   }
 
+  // TODO: Eliminar user e importar desde useAuthStore para verificar usuario logueado
+  // const user = true; 
+
   return (
     <>
       <Routes>

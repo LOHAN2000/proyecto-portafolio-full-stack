@@ -29,10 +29,10 @@ export const Carlos = () => {
             <section id="home" className="flex flex-col md:flex-row items-center gap-10">
               <div className="flex-1 space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
-                  Hey there, I'm Anurag!
+                  ¡Hola Soy, Soy Carlos Yudiño!
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  A Full Stack Developer and Designer based in India, passionate about turning code into seamless user experiences.
+                "Full Stack Dev & Diseño | Código ➜ UX intuitiva potenciada con IA"
                 </p>
                 <a
                   href="/cv.pdf"

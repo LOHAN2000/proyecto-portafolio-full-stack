@@ -77,19 +77,18 @@ export const Carlos = () => {
 
 
 
-    
-            {/* Work Experience Section */}
 
+{/* Work Experience Section */}
 
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+<div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
   <div className="flex justify-between items-center mb-4">
     <div>
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Sol del Pacífico</h3>
-      <p className="text-gray-600 dark:text-gray-300">Coordinador de TI</p>
+      <h3 className="text-xl font-bold text-gray-800 dark:text-white">Sol del Pacífico</h3>
+      <p className="text-gray-600 dark:text-gray-300 italic">Coordinador de TI</p>
     </div>
-    <span className="text-sm text-gray-500 dark:text-gray-400">Mar 2021 - May 2022</span>
+    <span className="text-sm text-gray-500 dark:text-gray-400 font-light">Mar 2021 - May 2022</span>
   </div>
-  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 font-normal">
     <li>Supervisión de infraestructura tecnológica</li>
     <li>Implementación de medidas de ciberseguridad</li>
     <li>Gestión y mantenimiento de sistemas operativos</li>
@@ -99,17 +98,36 @@ export const Carlos = () => {
 <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
   <div className="flex justify-between items-center mb-4">
     <div>
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Tracklog Personal</h3>
-      <p className="text-gray-600 dark:text-gray-300">Soporte de Equipos MDVR con IA</p>
+      <h3 className="text-xl font-bold text-gray-800 dark:text-white">Tracklog IT</h3>
+      <p className="text-gray-600 dark:text-gray-300 italic">Soporte de Equipos MDVR con IA</p>
     </div>
-    <span className="text-sm text-gray-500 dark:text-gray-400">Jun 2022 - Presente</span>
+    <span className="text-sm text-gray-500 dark:text-gray-400 font-light">Jun 2022 - Presente</span>
   </div>
-  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 font-normal">
     <li>Diagnóstico y mantenimiento de equipos de monitoreo</li>
     <li>Análisis predictivo de fallos con inteligencia artificial</li>
     <li>Integración con sistemas de gestión de flotas</li>
   </ul>
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

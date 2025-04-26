@@ -28,6 +28,13 @@ jobs:
         working-directory: ./frontend
         run: npm run build
 
+      - name: Add 404 fallback
+        working-directory: ./frontend
+        run: |
+          # Copiamos index.html a 404.html para que GH Pages
+          # sirva la SPA en cualquier URL no encontrada
+          cp dist/index.html dist/404.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

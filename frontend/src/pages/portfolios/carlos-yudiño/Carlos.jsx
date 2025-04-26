@@ -29,13 +29,12 @@ export const Carlos = () => {
             <section id="home" className="flex flex-col md:flex-row items-center gap-10">
               <div className="flex-1 space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
-                  Hey there, I'm Anurag!
+                  ¡Hola Soy, Soy Carlos Yudiño!
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  A Full Stack Developer and Designer based in India, passionate about turning code into seamless user experiences.
+                "Full Stack Dev & Diseño | Código ➜ UX intuitiva potenciada con IA"
                 </p>
                 <a
-                  href="/cv.pdf"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-white rounded-full shadow-lg hover:bg-amber-700 transition-all"
                 >
                   Download CV <i className="ri-arrow-right-up-line ri-lg" />
@@ -49,101 +48,122 @@ export const Carlos = () => {
                 />
               </div>
             </section>
+
+
+
+{/* About Section */}
+<section id="about">
+  <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Sobre mi</h2>
+  
+  <p className="mb-4">
+    Ingeniero full-stack peruano especializado en arquitecturas escalables. Combino JavaScript/TypeScript, Python y bases de datos SQL/NoSQL con principios de IA para crear soluciones que simplifican lo complejo. Mi obsesión técnica se centra en código limpio, UX intuitiva y automatizaciones que sorprenden, respaldadas por entornos DevOps automatizados con Docker y AWS para escalabilidad real.
+  </p>
+  
+  <div className="space-y-3 mt-6">
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
+      <span><strong>DevOps:</strong> Automatizo entornos con Docker y AWS para escalabilidad real.</span>
+    </p>
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
+      <span><strong>Innovación:</strong> Líneas de código con ADN peruano: precisión andina y creatividad sin límites.</span>
+    </p>
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
+      <span><strong>Meta:</strong> Que cada sistema que diseño sea un puente entre tecnología y propósito humano.</span>
+    </p>
+  </div>
+
+  <div className="mt-8 space-y-3">
+    <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Habilidades técnicas</h3>
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>JavaScript/TypeScript</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>React/Next.js</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>Python/Django</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>AWS/Docker</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>SQL/NoSQL</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>CI/CD Pipelines</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+{/* Work Experience Section */}
+
+<div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+  <div className="flex justify-between items-center mb-4">
+    <div>
+      <h3 className="text-xl font-bold text-gray-800 dark:text-white">Sol del Pacífico</h3>
+      <p className="text-gray-600 dark:text-gray-300 italic">Coordinador de TI</p>
+    </div>
+    <span className="text-sm text-gray-500 dark:text-gray-400 font-light">Mar 2021 - May 2022</span>
+  </div>
+  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 font-normal">
+    <li>Supervisión de infraestructura tecnológica</li>
+    <li>Implementación de medidas de ciberseguridad</li>
+    <li>Gestión y mantenimiento de sistemas operativos</li>
+  </ul>
+</div>
+
+<div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+  <div className="flex justify-between items-center mb-4">
+    <div>
+      <h3 className="text-xl font-bold text-gray-800 dark:text-white">Tracklog IT</h3>
+      <p className="text-gray-600 dark:text-gray-300 italic">Soporte de Equipos MDVR con IA</p>
+    </div>
+    <span className="text-sm text-gray-500 dark:text-gray-400 font-light">Jun 2022 - Presente</span>
+  </div>
+  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 font-normal">
+    <li>Diagnóstico y mantenimiento de equipos de monitoreo</li>
+    <li>Análisis predictivo de fallos con inteligencia artificial</li>
+    <li>Integración con sistemas de gestión de flotas</li>
+  </ul>
+</div>
+
     
-            {/* About Section */}
-            <section id="about">
-              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Sobre mi</h2>
-              <div className="grid md:grid-cols-2 gap-12">
-                <div className="space-y-6">
-                  <p className="text-gray-600 dark:text-gray-300">
-                    I'm a passionate full-stack developer with a background in computer science and extensive experience in crafting digital solutions that empower and inspire.
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    My journey blends strong theoretical foundations with real-world practice—coding in Python, JavaScript, and mastery of databases to deliver robust applications.
-                  </p>
-                </div>
-                <ul className="flex flex-wrap gap-3">
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    HTML
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    CSS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    SASS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Bootstrap
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Tailwind
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    JS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    TS
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    React
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Next.js
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Node
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Express
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    MongoDB
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    MySQL
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    Docker
-                  </li>
-                  <li className="px-4 my-auto py-3 bg-zinc-900 text-gray-800 dark:text-gray-200 rounded-full shadow-md hover:bg-amber-500 hover:text-white transition-all">
-                    AWS
-                  </li>
-                </ul>
-              </div>
-            </section>
-    
-            {/* Work Experience Section */}
-            <section id="work">
-              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Experiencia</h2>
-              <div className="space-y-8">
-                <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-                  <div className="flex justify-between items-center mb-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">LTI-Mindtree</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Software Engineer</p>
-                    </div>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">Jul 2021 - Present</span>
-                  </div>
-                  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                    <li>Back-end engineer in Banking & Finance</li>
-                    <li>Maintained portal features (Java, Spring, MySQL)</li>
-                  </ul>
-                </div>
-                <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-                  <div className="flex justify-between items-center mb-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Edunomics</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Web Developer Intern</p>
-                    </div>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">May 2020 - Jul 2020</span>
-                  </div>
-                  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
-                    <li>Built & deployed Edunomics.in</li>
-                    <li>Stack: React, Bootstrap, Node, Express, MongoDB</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
             <section id="services" className="bg-black py-16  border-t flex w-full  border-gray-800 border-b-2">
                 <div className="max-w-[1800px] mx-auto">
@@ -194,45 +214,59 @@ export const Carlos = () => {
                 </div>
             </section>
     
-            {/* Projects Section */}
-            <section id="projects">
-              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Proyectos</h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a
-                  href="https://amazon-clone.example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <img src="/images/amazon.jpg" alt="Amazon Clone" className="w-full h-40 object-cover" />
-                  <div className="p-4">
-                    <h3 className="text-lg font-medium text-gray-800 dark:text-white">Amazon Clone</h3>
-                  </div>
-                </a>
-                <a
-                  href="https://facebook-clone.example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <img src="/images/facebook.jpg" alt="Facebook Clone" className="w-full h-40 object-cover" />
-                  <div className="p-4">
-                    <h3 className="text-lg font-medium text-gray-800 dark:text-white">Facebook Clone</h3>
-                  </div>
-                </a>
-                <a
-                  href="https://spotify-clone.example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <img src="/images/spotify.jpg" alt="Spotify Clone" className="w-full h-40 object-cover" />
-                  <div className="p-4">
-                    <h3 className="text-lg font-medium text-gray-800 dark:text-white">Spotify Clone</h3>
-                  </div>
-                </a>
-              </div>
-            </section>
+
+
+{/* Projects Section */}
+<section id="projects">
+  <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Proyectos</h2>
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    {/* Proyecto 1 */}
+    <div className="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+      <div className="mb-4">
+        <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">🧰 Sistema Help Desk</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Plataforma para registrar y dar seguimiento a incidencias de TI.</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-400 text-sm">
+        <li>Desarrollado con Flask y PostgreSQL</li>
+        <li>Dashboard intuitivo para técnicos y usuarios</li>
+        <li>Soporte de notificaciones por correo</li>
+      </ul>
+    </div>
+
+    {/* Proyecto 2 */}
+    <div className="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+      <div className="mb-4">
+        <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">📍 Panel de Monitoreo Vehicular</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Interfaz de seguimiento y análisis de flotas con IA.</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-400 text-sm">
+        <li>Desarrollado en React + Node.js + MongoDB</li>
+        <li>Vista en tiempo real con mapas y alertas</li>
+        <li>Predicción de fallas mediante modelos ML</li>
+      </ul>
+    </div>
+
+    {/* Proyecto 3 */}
+    <div className="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+      <div className="mb-4">
+        <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">⚙️ Optimizador de Recursos TI</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Aplicación para analizar el uso de recursos y proponer mejoras.</p>
+      </div>
+      <ul className="list-disc list-inside text-gray-400 text-sm">
+        <li>Hecho con Python, Dash y Pandas</li>
+        <li>Visualización de métricas clave en tiempo real</li>
+        <li>Recomendaciones automáticas basadas en datos</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
     
             {/* Contact Section */}
             <section id="contact" className="bg-black py-16  border-t border-gray-800">
@@ -244,8 +278,8 @@ export const Carlos = () => {
                     <div className="grid md:grid-cols-2 gap-12 text-gray-400 justify-between">
                     <div className="space-y-8">
                         <p className="text-lg leading-relaxed">
-                        ¿Tienes un proyecto en mente o quieres colaborar juntos? 
-                        <br className="hidden md:block" /> ¡Hablemos sobre cómo puedo ayudarte!
+                        ¿Tienes una idea de proyecto o necesitas apoyo en el desarrollo tecnológico?  
+                        <br className="hidden md:block" /> Estoy disponible para colaborar en soluciones eficientes y profesionales.
                         </p>
                         
                         <div className="space-y-4">
@@ -253,14 +287,14 @@ export const Carlos = () => {
                             <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
                             </svg>
-                            <span>anurag@example.com</span>
+                            <span>carlosdraxler8@gmail.com</span>
                         </div>
                         
                         <div className="flex items-center space-x-3 hover:text-white transition-colors">
                             <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                             </svg>
-                            <span>+91-1010101010</span>
+                            <span>+51-963214880</span>
                         </div>
                         </div>
                     </div>
@@ -268,7 +302,7 @@ export const Carlos = () => {
                     <div className="space-y-8">
                     <div className="flex space-x-6 justify-end">
                         {/* GitHub */}
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
+                        <a className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
                             <span className="sr-only">GitHub</span>
                             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd"/>
@@ -276,7 +310,7 @@ export const Carlos = () => {
                         </a>
     
                         {/* X (Twitter) */}
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
+                        <a className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
                             <span className="sr-only">X (Twitter)</span>
                             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
@@ -284,7 +318,7 @@ export const Carlos = () => {
                         </a>
     
                         {/* LinkedIn */}
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
+                        <a className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
                             <span className="sr-only">LinkedIn</span>
                             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>

@@ -54,7 +54,7 @@ export const Mirella = () => {
             'Next.js', 'Node.js', 'Express', 'MySQL', 'AWS', 'SBS', 'Elo Boosting'].map((skill) => (
               <div 
                 key={skill}
-                className="px-4 py-2 bg-[#eceaf9] text-[#4a4c5e] rounded-full text-sm 
+                className="px-4 py-2 my-auto bg-[#eceaf9] text-[#4a4c5e] rounded-full text-sm 
                          hover:bg-[#e0def0] transition-colors border border-[#d1ceed]"
               >
                 {skill}

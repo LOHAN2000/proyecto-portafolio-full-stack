@@ -49,32 +49,62 @@ export const Carlos = () => {
                 />
               </div>
             </section>
-    
-            {/* About Section */}
-              <section id="about">
-  <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Sobre mi</h2>
 
+
+
+{/* About Section */}
+<section id="about">
+  <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Sobre mi</h2>
+  
   <p className="mb-4">
     Ingeniero full-stack peruano especializado en arquitecturas escalables. Combino JavaScript/TypeScript, Python y bases de datos SQL/NoSQL con principios de IA para crear soluciones que simplifican lo complejo. Mi obsesión técnica se centra en código limpio, UX intuitiva y automatizaciones que sorprenden, respaldadas por entornos DevOps automatizados con Docker y AWS para escalabilidad real.
   </p>
-
-  <div className="space-y-2 mt-4">
-    <p className="flex items-baseline">
-      <span className="mr-2">+</span>
+  
+  <div className="space-y-3 mt-6">
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
       <span><strong>DevOps:</strong> Automatizo entornos con Docker y AWS para escalabilidad real.</span>
     </p>
-    <p className="flex items-baseline">
-      <span className="mr-2">+</span>
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
       <span><strong>Innovación:</strong> Líneas de código con ADN peruano: precisión andina y creatividad sin límites.</span>
     </p>
-    <p className="flex items-baseline">
-      <span className="mr-2">+</span>
+    <p className="flex items-start">
+      <span className="text-blue-500 mr-2">•</span>
       <span><strong>Meta:</strong> Que cada sistema que diseño sea un puente entre tecnología y propósito humano.</span>
     </p>
   </div>
+
+  <div className="mt-8 space-y-3">
+    <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Habilidades técnicas</h3>
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>JavaScript/TypeScript</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>React/Next.js</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>Python/Django</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>AWS/Docker</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>SQL/NoSQL</span>
+      </li>
+      <li className="flex items-center">
+        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+        <span>CI/CD Pipelines</span>
+      </li>
+    </ul>
+  </div>
 </section>
-
-
 
 
 

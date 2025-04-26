@@ -3,65 +3,67 @@ import mirella from './img/mirella-perfil.png';
 
 export const Mirella = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-900 via-zinc-900 to-blue-900 font-poppins">
-      <main className="pt-24 container mx-auto flex-1 space-y-20 px-6 md:px-12">
-        {/* Hero Section */}
-        <section id="home" className="flex flex-col md:flex-row items-center gap-10">
-          <div className="flex-1 space-y-6 relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-pink-500 to-purple-600 blur-2xl opacity-30 rounded-full"></div>
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent leading-tight">
-              Hey Hola, Yo soy Mirella!
-            </h1>
-            <p className="text-lg text-gray-200">
-              Me apasiona la tecnología y la innovación, y estoy en constante aprendizaje para combinar mis conocimientos técnicos con una orientación al usuario
-            </p>
-            <a
-              href="/cv.pdf"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full shadow-lg hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105"
-            >
-              Download CV <i className="ri-arrow-right-up-line ri-lg" />
-            </a>
-          </div>
-          <div className="flex-1 flex justify-center relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
-            <img
-              src={mirella}
-              alt="Mirella Gavino"
-              className="rounded-full w-64 h-64 object-cover object-center shadow-2xl border-4 border-transparent bg-gradient-to-r from-pink-500 to-purple-600 bg-origin-border p-1"
-            />
-          </div>
-        </section>
+<div className="min-h-screen flex flex-col bg-[#440545] font-poppins">
+  <main className="pt-16 container mx-auto flex-1 space-y-16 px-6 md:px-12">
+    {/* Hero Section */}
+    <section id="home" className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <div className="flex-1 space-y-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#eec4f2] leading-tight">
+          Hola, soy Mirella Gavino
+        </h1>
+        <p className="text-lg text-[#6B6D7F] max-w-2xl">
+          Apasionada por la tecnología y la innovación, especializada en combinar conocimientos técnicos 
+          con un enfoque centrado en el usuario.
+        </p>
+        <a
+          href="/cv.pdf"
+          className="inline-flex items-center gap-3 px-6 py-3 bg-[#e6e4f5] text-[#4a4c5e] rounded-lg 
+                   hover:bg-[#d8d6e5] transition-all border-2 border-[#d8d6e5]"
+        >
+          <span>Descargar CV</span>
+          <i className="ri-arrow-right-up-line ri-lg" />
+        </a>
+      </div>
+      <div className="flex-1 flex justify-center">
+        <img
+          src={mirella}
+          alt="Mirella Gavino"
+          className="rounded-full w-60 h-60 object-cover object-center shadow-sm 
+                   border-4 border-[#d1ceed]"
+        />
+      </div>
+    </section>
 
-        {/* About Section */}
-        <section id="about" className="relative">
-          <div className="absolute -inset-4 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-3xl blur-xl"></div>
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-8">Sobre mi</h2>
-          <div className="grid md:grid-cols-2 gap-12 backdrop-blur-sm">
-            <div className="space-y-6">
-              <p className="text-gray-200">
-                Soy estudiante de Ingeniería de Sistemas con una sólida trayectoria laboral desde los 17 años en diversos sectores.
-                He trabajado como profesora de matemáticas, en atención al cliente, como cajera y actualmente en el área de desarrollo de clientes.
-                A lo largo de mi experiencia, he desarrollado habilidades en resolución de problemas, comunicación efectiva y gestión de clientes,
-                combinando mi formación en tecnología con un enfoque centrado en el usuario. Estoy en constante aprendizaje y busco aplicar mis conocimientos 
-                en entornos dinámicos donde pueda aportar soluciones innovadoras.
-              </p>
-              <p className="text-gray-200">
-                Trabajo en servicios de docencia en matemáticas, Elo Boosting en videojuegos competitivos y atención al cliente, garantizando calidad, eficiencia y un enfoque personalizado.
-              </p>
-            </div>
-            <ul className="flex flex-wrap gap-3">
-              {['HTML', 'CSS', 'SASS', 'Bootstrap', 'Tailwind', 'JS', 'TS', 'React', 
-                'Next.js', 'Node', 'Express', 'Eloboosting', 'MySQL', 'SBS', 'AWS'].map((skill) => (
-                <li 
-                  key={skill}
-                  className="px-4 py-3 bg-gradient-to-br from-pink-500/30 to-purple-600/30 text-gray-200 rounded-full shadow-md hover:from-pink-500 hover:to-purple-600 transition-all cursor-pointer hover:shadow-pink-400/20"
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+    {/* About Section */}
+    <section id="about" className="py-12 border-t border-[#e0def0]">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#eec4f2] mb-8">Sobre mí</h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-6 text-[#6B6D7F]">
+          <p className="leading-relaxed">
+            Como estudiante de Ingeniería de Sistemas, he desarrollado mi carrera profesional desde los 17 años 
+            en diversos sectores incluyendo docencia en matemáticas, atención al cliente y actualmente en 
+            desarrollo de clientes. Combino formación técnica con habilidades en resolución de problemas 
+            estratégicos y comunicación efectiva.
+          </p>
+          <p className="leading-relaxed">
+            Mi experiencia abarca desde servicios educativos personalizados hasta optimización de relaciones 
+            cliente-empresa, siempre manteniendo altos estándares de calidad y eficiencia operativa.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          {['HTML', 'CSS', 'SASS', 'Bootstrap', 'Tailwind', 'JavaScript', 'TypeScript', 'React', 
+            'Next.js', 'Node.js', 'Express', 'MySQL', 'AWS', 'SBS', 'Elo Boosting'].map((skill) => (
+              <div 
+                key={skill}
+                className="px-4 py-2 bg-[#eceaf9] text-[#4a4c5e] rounded-full text-sm 
+                         hover:bg-[#e0def0] transition-colors border border-[#d1ceed]"
+              >
+                {skill}
+              </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
         {/* Work Experience Section */}
         <section id="work" className="relative">

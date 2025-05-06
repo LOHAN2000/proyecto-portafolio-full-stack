@@ -4,11 +4,24 @@ import mirella from './img/mirella-perfil.png';
 export const Mirella = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#440545] font-poppins">
+      <style jsx global>{`
+        @keyframes gradient-x {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-gradient-x {
+          background-size: 200% 200%;
+          animation: gradient-x 5s ease infinite;
+        }
+      `}</style>
+
       <main className="pt-16 container mx-auto flex-1 space-y-16 px-6 md:px-12">
         {/* Hero Section */}
         <section id="home" className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#eec4f2] leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 
+                          bg-clip-text text-transparent leading-tight animate-gradient-x">
               Hola, soy Mirella Gavino
             </h1>
             <p className="text-lg text-[#6B6D7F] max-w-2xl">
@@ -37,7 +50,10 @@ export const Mirella = () => {
 
         {/* About Section */}
         <section id="about" className="py-12 border-t border-[#e0def0]">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#eec4f2] mb-8">Sobre mí</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 
+                        bg-clip-text text-transparent mb-8 animate-gradient-x">
+            Sobre mí
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6 text-[#6B6D7F]">
               <p className="leading-relaxed">
@@ -70,7 +86,10 @@ export const Mirella = () => {
         {/* Work Experience Section */}
         <section id="work" className="relative">
           <div className="absolute -inset-4 bg-gradient-to-bl from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl"></div>
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-8">Experiencia</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 
+                        bg-clip-text text-transparent mb-8 animate-gradient-x">
+            Experiencia
+          </h2>
           <div className="space-y-8 backdrop-blur-sm">
             <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-6 rounded-lg shadow-lg backdrop-blur-lg 
                           border border-pink-500/30 transition-all duration-500 transform hover:scale-103 hover:translate-y-2 
@@ -109,7 +128,8 @@ export const Mirella = () => {
         {/* Services Section */}
         <section id="servicios" className="py-16 bg-zinc-900/50 backdrop-blur-sm">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-12 text-center">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
+                          bg-clip-text text-transparent mb-12 text-center animate-gradient-x">
               Servicios
             </h2>
 
@@ -174,7 +194,8 @@ export const Mirella = () => {
 
         {/* Projects Section */}
         <section id="projects" className="relative py-16 border-t border-purple-500/30">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-purple-400 bg-clip-text text-transparent mb-12">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 
+                        bg-clip-text text-transparent mb-12 animate-gradient-x">
             Mi Blog
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -241,7 +262,8 @@ export const Mirella = () => {
         {/* Contact Section */}
         <section id="contact" className="relative py-16 border-t border-purple-500/30">
           <div className="max-w-[1800px] mx-auto">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent mb-12">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 
+                          bg-clip-text text-transparent mb-12 animate-gradient-x">
               Contáctame
             </h2>
             

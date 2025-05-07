@@ -107,7 +107,6 @@ export class AuthController {
   }
 
   static async me(req, res) {
-    // Aquí, verifyToken ya puso `req.user` -----
     return res.json(req.user);
   }
 }

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import gerardo from './img/gerardo-perfil.jpeg';
+import cloudcomputing from './img/cloud-computing.jpg'
+import cybersecurity from './img/cybersecurity.png'
+import datacenter from './img/data-center.jpg'
+
 
 export const Gerardo = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -36,6 +40,7 @@ export const Gerardo = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
               Hola, Soy <span className="text-emerald-600">Gerardo Campos Velasquez</span>!
             </h1>
+
             <div className="space-y-4 text-lg text-gray-300">
               <p className="leading-relaxed">
                 <span className="font-semibold text-emerald-600">
@@ -43,6 +48,7 @@ export const Gerardo = () => {
                 </span>{' '}
                 con más de una década liderando transformaciones tecnológicas en el sector Retail.
               </p>
+
               <div className="space-y-3 border-l-4 border-emerald-600 pl-4">
                 <p className="flex items-center gap-2">
                   <i className="ri-server-line ri-lg text-emerald-600"></i>
@@ -58,6 +64,7 @@ export const Gerardo = () => {
                 </p>
               </div>
             </div>
+
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 'Data Centers',
@@ -76,6 +83,7 @@ export const Gerardo = () => {
                 </div>
               ))}
             </div>
+
             <div className="flex flex-col md:flex-row gap-4">
               <a className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all">
                 <i className="ri-file-download-line ri-lg"></i>
@@ -112,6 +120,7 @@ export const Gerardo = () => {
                 Mi experiencia abarca desde la dirección técnica de proyectos multinacionales hasta la optimización de operaciones IT, siempre bajo los estándares internacionales como ITIL, COBIT y normas ISO.
               </p>
             </div>
+
             <div className="grid grid-cols-2 gap-4">
               {[
                 'ITIL Certification',
@@ -197,6 +206,43 @@ export const Gerardo = () => {
           </div>
         </section>
 
+        {/* Galería de Proyectos (Feature 5: tres imágenes) */}
+        <section id="gallery" className="py-16 border-t border-gray-800">
+          <h2 className="text-4xl font-bold text-white mb-8">Proyectos Destacados</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="overflow-hidden rounded-lg border border-gray-800 hover:shadow-2xl transition-shadow">
+              <img
+                src={datacenter}
+                alt="Data Center"
+                className="w-full h-48 object-cover"
+              />
+              <p className="mt-4 text-gray-300 text-center">
+                Implementación de Data Centers de alta disponibilidad
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-lg border border-gray-800 hover:shadow-2xl transition-shadow">
+              <img
+                src={cloudcomputing}
+                alt="Cloud Computing"
+                className="w-full h-48 object-cover"
+              />
+              <p className="mt-4 text-gray-300 text-center">
+                Arquitecturas Cloud híbridas y multi-nube
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-lg border border-gray-800 hover:shadow-2xl transition-shadow">
+              <img
+                src={cybersecurity}
+                alt="Cybersecurity"
+                className="w-full h-48 object-cover"
+              />
+              <p className="mt-4 text-gray-300 text-center">
+                Soluciones de ciberseguridad conforme a NIST y CIS
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Contacto */}
         <section id="contact" className="py-16 border-t border-gray-800">
           <div className="max-w-6xl mx-auto">
@@ -219,6 +265,7 @@ export const Gerardo = () => {
                   </div>
                 </div>
               </div>
+
               <div className="flex space-x-6 justify-start md:justify-end">
                 <a className="text-gray-400 hover:text-emerald-400 transition-colors">
                   <i className="ri-linkedin-box-fill ri-3x"></i>
@@ -231,6 +278,7 @@ export const Gerardo = () => {
                 </a>
               </div>
             </div>
+
             <div className="mt-16 pt-8 border-t border-gray-800">
               <p className="text-center text-gray-500">
                 © {new Date().getFullYear()} Gerardo Campos. Todos los derechos reservados
@@ -240,6 +288,7 @@ export const Gerardo = () => {
         </section>
       </main>
 
+      {/* Feature 4: Floating "Contactar Ahora" Button */}
       <a
         href="#contact"
         className="fixed bottom-6 right-6 p-4 bg-emerald-600 text-white rounded-full shadow-xl animate-bounce hover:animate-none transition-transform z-50"

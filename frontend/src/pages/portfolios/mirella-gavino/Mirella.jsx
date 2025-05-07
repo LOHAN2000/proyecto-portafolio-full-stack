@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import mirella from './img/mirella-perfil.png';
+import mirellaPerfil from './img/mirella-perfil.png';
+import atencionCliente from './img/atencion al cliente.jpg';
+import clasesParticulares from './img/clases particulares.jpg';
+import desarrolloClientes from './img/desarrollo de clientes.jpg';
 
 export const Mirella = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,6 +58,7 @@ export const Mirella = () => {
               {id: 'work', text: 'Experiencia'},
               {id: 'servicios', text: 'Servicios'},
               {id: 'projects', text: 'Mi Blog'},
+              {id: 'gallery', text: 'Galería'},
               {id: 'contact', text: 'Contáctame'}
             ].map((item) => (
               <a 
@@ -113,6 +117,7 @@ export const Mirella = () => {
                   {id: 'work', text: 'Experiencia'},
                   {id: 'servicios', text: 'Servicios'},
                   {id: 'projects', text: 'Mi Blog'},
+                  {id: 'gallery', text: 'Galería'},
                   {id: 'contact', text: 'Contáctame'}
                 ].map((item) => (
                   <a 
@@ -176,7 +181,7 @@ export const Mirella = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full 
                           blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <img
-              src={mirella}
+              src={mirellaPerfil}
               alt="Mirella Gavino"
               className="rounded-full w-60 h-60 object-cover object-center shadow-sm 
                        border-4 border-[#d1ceed] transition-transform duration-300 transform group-hover:scale-105 
@@ -258,6 +263,70 @@ export const Mirella = () => {
                 <li className="hover:pl-2 transition-all">Adaptación del contenido y metodología según el nivel</li>
                 <li className="hover:pl-2 transition-all">Cursos: Algebra, Trigonometria, Fisica, Geometria, Quimica</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Gallery Section */}
+        <section id="gallery" className="py-16">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 
+                        bg-clip-text text-transparent mb-12 animate-gradient-x">
+            Galería
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src={mirellaPerfil} 
+                alt="Mirella Gavino perfil" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h3 className="text-white text-xl font-semibold">Perfil profesional</h3>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src={atencionCliente} 
+                alt="Atención al cliente" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h3 className="text-white text-xl font-semibold">Atención al cliente</h3>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src={clasesParticulares} 
+                alt="Clases particulares" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h3 className="text-white text-xl font-semibold">Clases particulares</h3>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 md:col-span-2">
+              <img 
+                src={desarrolloClientes} 
+                alt="Desarrollo de clientes" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h3 className="text-white text-xl font-semibold">Desarrollo de clientes</h3>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src={mirellaPerfil} 
+                alt="Mirella Gavino perfil" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <h3 className="text-white text-xl font-semibold">Perfil profesional</h3>
+              </div>
             </div>
           </div>
         </section>
@@ -420,7 +489,7 @@ export const Mirella = () => {
                     </div>
                     <span>mgavino614@gmail.com</span>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 hover:text-blue-300 transition-colors group">
                     <div className="p-2 bg-purple-500/20 rounded-full group-hover:bg-blue-500/30 transition-colors">
                       <svg className="w-6 h-6 text-purple-300 group-hover:text-blue-300" fill="currentColor" viewBox="0 0 24 24">

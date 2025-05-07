@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import gerardo from './img/gerardo-perfil.jpeg';
 
 export const Gerardo = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (scrollTop / docHeight) * 100;
+      setScrollProgress(scrolled);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex flex-col bg-black font-poppins">
+    <div className="min-h-screen flex flex-col bg-black font-poppins relative">
+      {/* Feature 3: Scroll progress bar */}
+      <div
+        className="fixed top-0 left-0 h-1 bg-emerald-600 z-50 transition-all duration-150"
+        style={{ width: `${scrollProgress}%` }}
+      />
+
       <main className="pt-24 container mx-auto flex-1 space-y-20 px-6 md:px-12">
         {/* Sección Inicio (Feature 1: fondo pulsante) */}
         <section
@@ -17,7 +36,6 @@ export const Gerardo = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
               Hola, Soy <span className="text-emerald-600">Gerardo Campos Velasquez</span>!
             </h1>
-
             <div className="space-y-4 text-lg text-gray-300">
               <p className="leading-relaxed">
                 <span className="font-semibold text-emerald-600">
@@ -25,7 +43,6 @@ export const Gerardo = () => {
                 </span>{' '}
                 con más de una década liderando transformaciones tecnológicas en el sector Retail.
               </p>
-
               <div className="space-y-3 border-l-4 border-emerald-600 pl-4">
                 <p className="flex items-center gap-2">
                   <i className="ri-server-line ri-lg text-emerald-600"></i>
@@ -41,7 +58,6 @@ export const Gerardo = () => {
                 </p>
               </div>
             </div>
-
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 'Data Centers',
@@ -60,7 +76,6 @@ export const Gerardo = () => {
                 </div>
               ))}
             </div>
-
             <div className="flex flex-col md:flex-row gap-4">
               <a className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all">
                 <i className="ri-file-download-line ri-lg"></i>
@@ -97,7 +112,6 @@ export const Gerardo = () => {
                 Mi experiencia abarca desde la dirección técnica de proyectos multinacionales hasta la optimización de operaciones IT, siempre bajo los estándares internacionales como ITIL, COBIT y normas ISO.
               </p>
             </div>
-
             <div className="grid grid-cols-2 gap-4">
               {[
                 'ITIL Certification',
@@ -205,7 +219,6 @@ export const Gerardo = () => {
                   </div>
                 </div>
               </div>
-
               <div className="flex space-x-6 justify-start md:justify-end">
                 <a className="text-gray-400 hover:text-emerald-400 transition-colors">
                   <i className="ri-linkedin-box-fill ri-3x"></i>
@@ -218,7 +231,6 @@ export const Gerardo = () => {
                 </a>
               </div>
             </div>
-
             <div className="mt-16 pt-8 border-t border-gray-800">
               <p className="text-center text-gray-500">
                 © {new Date().getFullYear()} Gerardo Campos. Todos los derechos reservados
@@ -227,6 +239,13 @@ export const Gerardo = () => {
           </div>
         </section>
       </main>
+
+      <a
+        href="#contact"
+        className="fixed bottom-6 right-6 p-4 bg-emerald-600 text-white rounded-full shadow-xl animate-bounce hover:animate-none transition-transform z-50"
+      >
+        <i className="ri-chat-3-line ri-2x"></i>
+      </a>
     </div>
   );
 };

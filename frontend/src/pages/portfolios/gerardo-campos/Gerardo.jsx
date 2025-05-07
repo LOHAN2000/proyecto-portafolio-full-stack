@@ -5,7 +5,7 @@ export const Gerardo = () => {
   return (
     <div className="min-h-screen flex flex-col bg-black font-poppins">
       <main className="pt-24 container mx-auto flex-1 space-y-20 px-6 md:px-12">
-        {/* Sección Inicio */}
+        {/* Sección Inicio (Feature 1: fondo pulsante) */}
         <section
           id="home"
           className="relative flex flex-col md:flex-row items-center gap-10 py-16 overflow-hidden"
@@ -143,7 +143,7 @@ export const Gerardo = () => {
           </div>
         </section>
 
-        {/* Servicios */}
+        {/* Servicios (Feature 2: tilt + shadow en hover) */}
         <section id="services" className="py-16 border-t border-gray-800">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-12">Servicios</h2>
@@ -170,7 +170,7 @@ export const Gerardo = () => {
               ].map((service, index) => (
                 <div
                   key={index}
-                  className="bg-gray-900 p-8 rounded-xl border border-gray-800 hover:border-emerald-600 transition-colors"
+                  className="bg-gray-900 p-8 rounded-xl border border-gray-800 transform transition-transform hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:border-emerald-600"
                 >
                   <div className={`w-12 h-12 mb-6 ${service.color}`}>
                     <i className={`${service.icon} ri-3x`}></i>

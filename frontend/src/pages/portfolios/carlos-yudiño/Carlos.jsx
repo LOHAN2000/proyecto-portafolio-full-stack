@@ -77,33 +77,28 @@ export const Carlos = () => {
   <div className="mt-8 space-y-3">
     <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Habilidades técnicas</h3>
     <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>JavaScript/TypeScript</span>
-      </li>
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>React/Next.js</span>
-      </li>
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>Python/Django</span>
-      </li>
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>AWS/Docker</span>
-      </li>
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>SQL/NoSQL</span>
-      </li>
-      <li className="flex items-center">
-        <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-        <span>CI/CD Pipelines</span>
-      </li>
+      {[
+        "JavaScript/TypeScript",
+        "React/Next.js",
+        "Python/Django",
+        "AWS/Docker",
+        "SQL/NoSQL",
+        "CI/CD Pipelines"
+      ].map((tech, index) => (
+        <li
+          key={index}
+          className="flex items-center bg-white dark:bg-zinc-800 p-3 rounded-lg hover:scale-105 hover:shadow-lg transition-transform duration-300"
+        >
+          <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+          <span>{tech}</span>
+        </li>
+      ))}
     </ul>
   </div>
 </section>
+
+
+
 
 
 

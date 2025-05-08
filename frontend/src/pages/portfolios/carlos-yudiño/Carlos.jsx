@@ -102,6 +102,14 @@ export const Carlos = () => {
 
 
 
+
+
+
+
+
+
+
+
 {/* Work Experience Section */}
 
 <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
@@ -211,6 +219,8 @@ export const Carlos = () => {
     
 
 
+
+
 {/* Projects Section */}
 <section id="projects">
   <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8">Proyectos</h2>
@@ -222,11 +232,14 @@ export const Carlos = () => {
         <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">🧰 Sistema Help Desk</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">Plataforma para registrar y dar seguimiento a incidencias de TI.</p>
       </div>
-      <ul className="list-disc list-inside text-gray-400 text-sm">
+      <ul className="list-disc list-inside text-gray-400 text-sm mb-4">
         <li>Desarrollado con Flask y PostgreSQL</li>
         <li>Dashboard intuitivo para técnicos y usuarios</li>
         <li>Soporte de notificaciones por correo</li>
       </ul>
+      <button className="text-white pb-1 border-b-2 border-transparent hover:border-blue-500 hover:border-b-4 transition-all duration-300">
+        Ver más detalles
+      </button>
     </div>
 
     {/* Proyecto 2 */}
@@ -235,11 +248,14 @@ export const Carlos = () => {
         <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">📍 Panel de Monitoreo Vehicular</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">Interfaz de seguimiento y análisis de flotas con IA.</p>
       </div>
-      <ul className="list-disc list-inside text-gray-400 text-sm">
+      <ul className="list-disc list-inside text-gray-400 text-sm mb-4">
         <li>Desarrollado en React + Node.js + MongoDB</li>
         <li>Vista en tiempo real con mapas y alertas</li>
         <li>Predicción de fallas mediante modelos ML</li>
       </ul>
+      <button className="text-white pb-1 border-b-2 border-transparent hover:border-blue-500 hover:border-b-4 transition-all duration-300">
+        Ver más detalles
+      </button>
     </div>
 
     {/* Proyecto 3 */}
@@ -248,15 +264,23 @@ export const Carlos = () => {
         <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">⚙️ Optimizador de Recursos TI</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">Aplicación para analizar el uso de recursos y proponer mejoras.</p>
       </div>
-      <ul className="list-disc list-inside text-gray-400 text-sm">
+      <ul className="list-disc list-inside text-gray-400 text-sm mb-4">
         <li>Hecho con Python, Dash y Pandas</li>
         <li>Visualización de métricas clave en tiempo real</li>
         <li>Recomendaciones automáticas basadas en datos</li>
       </ul>
+      <button className="text-white pb-1 border-b-2 border-transparent hover:border-blue-500 hover:border-b-4 transition-all duration-300">
+        Ver más detalles
+      </button>
     </div>
 
   </div>
 </section>
+
+
+
+
+
 
 
 

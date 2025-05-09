@@ -8,6 +8,7 @@ export const Carlos = () => {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-zinc-900 to-black font-sans text-white">
       <main className="pt-24 w-full max-w-7xl mx-auto flex-1 space-y-20 px-6 md:px-12">
 
+
         {/* Hero Section */}
         <section id="home" className="flex flex-col md:flex-row items-center gap-10 py-24 animate-fade-in">
           <div className="flex-1 space-y-6">
@@ -33,6 +34,14 @@ export const Carlos = () => {
             </div>
           </div>
         </section>
+
+
+
+
+
+
+
+
 
         {/* About Section */}
         <section id="about" className="bg-black text-gray-200 py-20">

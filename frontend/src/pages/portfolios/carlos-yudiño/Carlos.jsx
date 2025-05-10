@@ -62,63 +62,29 @@ export const Carlos = () => {
           </div>
         </section>
 
-        <style jsx>{`
-  @keyframes wobble {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    50% { transform: rotate(-2deg); }
-    75% { transform: rotate(1deg); }
-  }
-
-  @keyframes pulseLight {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 rgba(0, 255, 0, 0); }
-    50% { opacity: 0.6; box-shadow: 0 0 10px rgba(34, 197, 94, 0.8); }
-  }
-
-  .hover-wobble:hover {
-    animation: wobble 0.5s ease-in-out;
-  }
-
-  .hover-pulse:hover .dot {
-    animation: pulseLight 1s infinite;
-  }
-`}</style>
-
-<div className="mt-12">
-  <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-600 pb-2">
+        <div className="mt-12">
+  <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 mb-6 border-b border-gray-600 pb-2">
     🧠 Habilidades técnicas
   </h3>
-  <div className="space-y-6">
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
     {[
-      { title: "Frontend", skills: ["JavaScript / TypeScript", "React / Next.js"] },
-      { title: "Backend", skills: ["Python / Django", "SQL / NoSQL"] },
-      { title: "DevOps", skills: ["AWS / Docker", "CI/CD Pipelines"] },
-    ].map((category, idx) => (
-      <div key={idx}>
-        <h4 className="text-lg font-medium text-gray-300 mb-2">{category.title}</h4>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {category.skills.map((skill, index) => (
-            <li
-              key={index}
-              className="hover-wobble hover-pulse flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-              aria-label={`Habilidad: ${skill}`}
-              title={`Tecnología: ${skill}`}
-            >
-              <span className="dot inline-block w-2 h-2 rounded-full bg-green-500 mr-3"></span>
-              <span>{skill}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      { name: "JavaScript / TypeScript", icon: "🟨" },
+      { name: "React / Next.js", icon: "⚛️" },
+      { name: "Python / Django", icon: "🐍" },
+      { name: "AWS / Docker", icon: "☁️" },
+      { name: "SQL / NoSQL", icon: "🗄️" },
+      { name: "CI/CD Pipelines", icon: "🔁" },
+    ].map((tech, index) => (
+      <li
+        key={index}
+        className="flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+      >
+        <span className="text-xl mr-3">{tech.icon}</span>
+        <span className="text-sm md:text-base">{tech.name}</span>
+      </li>
     ))}
-  </div>
+  </ul>
 </div>
-
-
-
-
-
-
 
 
         {/* Experiencias */}

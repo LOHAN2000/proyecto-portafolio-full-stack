@@ -60,22 +60,64 @@ export const Carlos = () => {
               <span><strong className="text-white">Meta:</strong> Que cada sistema sea un puente entre tecnología y propósito humano.</span>
             </p>
           </div>
-
-          <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-600 pb-2">🧠 Habilidades técnicas</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {["JavaScript/TypeScript", "React/Next.js", "Python/Django", "AWS/Docker", "SQL/NoSQL", "CI/CD Pipelines"].map((tech, index) => (
-                <li
-                  key={index}
-                  className="flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-                >
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-3"></span>
-                  <span>{tech}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </section>
+
+        <style jsx>{`
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(1deg); }
+  }
+
+  @keyframes pulseLight {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 rgba(0, 255, 0, 0); }
+    50% { opacity: 0.6; box-shadow: 0 0 10px rgba(34, 197, 94, 0.8); }
+  }
+
+  .hover-wobble:hover {
+    animation: wobble 0.5s ease-in-out;
+  }
+
+  .hover-pulse:hover .dot {
+    animation: pulseLight 1s infinite;
+  }
+`}</style>
+
+<div className="mt-12">
+  <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-600 pb-2">
+    🧠 Habilidades técnicas
+  </h3>
+  <div className="space-y-6">
+    {[
+      { title: "Frontend", skills: ["JavaScript / TypeScript", "React / Next.js"] },
+      { title: "Backend", skills: ["Python / Django", "SQL / NoSQL"] },
+      { title: "DevOps", skills: ["AWS / Docker", "CI/CD Pipelines"] },
+    ].map((category, idx) => (
+      <div key={idx}>
+        <h4 className="text-lg font-medium text-gray-300 mb-2">{category.title}</h4>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {category.skills.map((skill, index) => (
+            <li
+              key={index}
+              className="hover-wobble hover-pulse flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+              aria-label={`Habilidad: ${skill}`}
+              title={`Tecnología: ${skill}`}
+            >
+              <span className="dot inline-block w-2 h-2 rounded-full bg-green-500 mr-3"></span>
+              <span>{skill}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
 
 
 

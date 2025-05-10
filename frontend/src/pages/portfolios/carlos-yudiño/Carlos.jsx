@@ -3,10 +3,13 @@ import carlos from './img/carlos-perfil.jpeg'
 import experiencia1 from './img/sol-del-pacifico.jpeg'
 import experiencia2 from './img/tracklog-it.jpeg'
 
+import ciberseguridad from './img/Ciberseguridad.jpg';
+import trabajoEnEquipo from './img/trabajoEnEquipo.jpg';
 export const Carlos = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-zinc-900 to-black font-sans text-white">
       <main className="pt-24 w-full max-w-7xl mx-auto flex-1 space-y-20 px-6 md:px-12">
+
 
         {/* Hero Section */}
         <section id="home" className="flex flex-col md:flex-row items-center gap-10 py-24 animate-fade-in">
@@ -33,6 +36,7 @@ export const Carlos = () => {
             </div>
           </div>
         </section>
+
 
         {/* About Section */}
         <section id="about" className="bg-black text-gray-200 py-20">
@@ -125,6 +129,42 @@ export const Carlos = () => {
             </div>
           ))}
         </section>
+
+
+{/* Gallery Section */}
+<section id="gallery" className="py-16">
+  <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400
+                  bg-clip-text text-transparent mb-12 animate-gradient-x">
+    Galería de Images
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {/* Imagen: Trabajo en equipo */}
+    <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+      <img
+        src={trabajoEnEquipo}
+        alt="Trabajo en equipo"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+        <h3 className="text-white text-xl font-semibold">Trabajo en equipo</h3>
+      </div>
+    </div>
+
+    {/* Imagen: Ciberseguridad */}
+    <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+      <img
+        src={ciberseguridad}
+        alt="Ciberseguridad"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+        <h3 className="text-white text-xl font-semibold">Ciberseguridad</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
         {/* Servicios */}

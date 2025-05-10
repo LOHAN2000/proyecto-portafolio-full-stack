@@ -60,23 +60,31 @@ export const Carlos = () => {
               <span><strong className="text-white">Meta:</strong> Que cada sistema sea un puente entre tecnología y propósito humano.</span>
             </p>
           </div>
-
-          <div className="mt-12">
-            <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-600 pb-2">🧠 Habilidades técnicas</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {["JavaScript/TypeScript", "React/Next.js", "Python/Django", "AWS/Docker", "SQL/NoSQL", "CI/CD Pipelines"].map((tech, index) => (
-                <li
-                  key={index}
-                  className="flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-                >
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-3"></span>
-                  <span>{tech}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </section>
 
+        <div className="mt-12">
+  <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 mb-6 border-b border-gray-600 pb-2">
+    🧠 Habilidades técnicas
+  </h3>
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {[
+      { name: "JavaScript / TypeScript", icon: "🟨" },
+      { name: "React / Next.js", icon: "⚛️" },
+      { name: "Python / Django", icon: "🐍" },
+      { name: "AWS / Docker", icon: "☁️" },
+      { name: "SQL / NoSQL", icon: "🗄️" },
+      { name: "CI/CD Pipelines", icon: "🔁" },
+    ].map((tech, index) => (
+      <li
+        key={index}
+        className="flex items-center bg-zinc-900 hover:bg-zinc-800 text-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+      >
+        <span className="text-xl mr-3">{tech.icon}</span>
+        <span className="text-sm md:text-base">{tech.name}</span>
+      </li>
+    ))}
+  </ul>
+</div>
 
 
         {/* Experiencias */}

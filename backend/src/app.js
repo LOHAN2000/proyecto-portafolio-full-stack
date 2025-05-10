@@ -8,7 +8,11 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://lohan2000.github.io'],
+  origin: [
+    'http://localhost:5173',      // desarrollo local Vite por defecto
+    'http://localhost:5174',      // desarrollo en Docker
+    'https://lohan2000.github.io' // producción frontend
+  ],
   credentials: true,
 }));
 app.use(cookieParser());
